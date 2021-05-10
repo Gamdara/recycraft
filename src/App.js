@@ -1,11 +1,20 @@
-import "./App.css";
-import Login from "./Login";
+import StoreIndex from "./pages/StoreIndex";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
+// import Navbar from "./components/sections/Navbar";
 
 function App() {
   return (
-    <div className="app">
-      <Login />
-    </div>
+    <Router>
+      <div className="app">
+        {/* <Navbar></Navbar> */}
+        <Switch>
+          <Route exact path="/">
+            <StoreIndex />
+
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
