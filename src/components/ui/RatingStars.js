@@ -5,9 +5,9 @@ import Rating from 'react-rating'
 function RatingStars(props) {
     
     return (
-        <div>
-            <Rating emptySymbol={<StarBorder/>} fullSymbol={<Star/>} fractions="2" {...props} ></Rating>        
-        </div>
+        // <div>
+            <Rating emptySymbol={<StarBorder fontSize={props.size}/>} fullSymbol={<Star fontSize={props.size}/>} fractions="2" {...props} ></Rating>        
+        // </div>
     )
 }
 
